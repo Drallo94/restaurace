@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+
+
+<html lang="cs">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="theme-color" content="#fff">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<meta name="robots" content="index,follow">
+	<title>Gulp</title>
+	<meta name="description" content="Gulp example">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Gulp">
+	<meta property="og:site_name" content="Gulp">
+	<meta property="og:url" content="https://www.url.com">
+	<meta property="og:description" content="Gulp example">
+	<meta property="og:image" content="https://www.url.com/config/og/fb-image_1200x630.jpg">
+	
+	<link rel="stylesheet" href="css/style.min.css" type="text/css">
+	<link rel="stylesheet" href="css/print.min.css" media="print">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="manifest" href="config/manifest/manifest.json">
+
+		<script type="text/javascript">
+		var ajax = new XMLHttpRequest();
+		ajax.open("GET", "svgs/svgs.svg", true);
+		ajax.send();
+		ajax.onload = function(e) {
+			var div = document.createElement("div");
+			div.innerHTML = ajax.responseText;
+			document.body.insertBefore(div, document.body.childNodes[0]);
+		}
+	 </script>
+</head>
+<body>
+	<div class="site">
+		
+<div class="signpost">
+	<img src="images/pizza.jpg" alt="" class="signpost__bg">
+	<div class="signpost__header">
+		<a href="#" class="signpost__logo">
+			<svg class="icon icon--logo">
+	<use xlink:href="#icon--logo"></use>
+</svg>
+
+		</a>
+		<div class="signpost__icons">
+			<a href="#"><svg class="icon icon--fb">
+	<use xlink:href="#icon--fb"></use>
+</svg>
+</a>
+			<a href="#"><svg class="icon icon--ig">
+	<use xlink:href="#icon--ig"></use>
+</svg>
+</a>
+			<a href="#"><svg class="icon icon--call">
+	<use xlink:href="#icon--call"></use>
+</svg>
+</a>
+			<a href="#"><svg class="icon icon--mail">
+	<use xlink:href="#icon--mail"></use>
+</svg>
+</a>
+		</div>
+	</div>
+	<div class="signpost__content">
+		<p class="signpost__title">Vyberte prosím jednu z&nbsp;možností</p>
+		<div class="signpost__list">
+			<a href="#" class="signpost__item">
+				<img src="images/sign1.jpg" alt="" class="signpost__img">
+				<div class="signpost__box">
+					<p class="signpost__item-title">Rozvoz</p>
+					<p class="signpost__item-text">Objednej si jídlo on-line</p>
+					<svg class="icon icon--21icon">
+	<use xlink:href="#icon--21icon"></use>
+</svg>
+
+				</div>
+			</a>
+			<a href="#" class="signpost__item">
+				<img src="images/sign2.jpg" alt="" class="signpost__img">
+				<div class="signpost__box">
+					<p class="signpost__item-title">Restaurace</p>
+					<p class="signpost__item-text">Mrkni se na web naší restaurace</p>
+					<svg class="icon icon--21icon">
+	<use xlink:href="#icon--21icon"></use>
+</svg>
+
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class="signpost__footer">
+		<div class="signpost__footer-bg">
+			<svg class="icon icon--footer-bg">
+	<use xlink:href="#icon--footer-bg"></use>
+</svg>
+
+		</div>
+		<p>© mr.pizza 2022. Všechna práva vyhrazena.</p>
+	</div>
+</div>
+
+	</div>
+
+	<script src="js/scripts.js"></script>
+</body>
+</html>
