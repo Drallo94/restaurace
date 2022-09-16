@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+
+
+<html lang="cs">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="theme-color" content="#fff">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<meta name="robots" content="index,follow">
+	<title>Gulp</title>
+	<meta name="description" content="Gulp example">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Gulp">
+	<meta property="og:site_name" content="Gulp">
+	<meta property="og:url" content="https://www.url.com">
+	<meta property="og:description" content="Gulp example">
+	<meta property="og:image" content="https://www.url.com/config/og/fb-image_1200x630.jpg">
+	
+	<link rel="stylesheet" href="css/style.min.css" type="text/css">
+	<link rel="stylesheet" href="css/print.min.css" media="print">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="manifest" href="config/manifest/manifest.json">
+
+		<script type="text/javascript">
+		var ajax = new XMLHttpRequest();
+		ajax.open("GET", "svgs/svgs.svg", true);
+		ajax.send();
+		ajax.onload = function(e) {
+			var div = document.createElement("div");
+			div.innerHTML = ajax.responseText;
+			document.body.insertBefore(div, document.body.childNodes[0]);
+		}
+	 </script>
+</head>
+<body>
+	<div class="site">
+		
+	<header class="header">
+	<div class="container">
+		<a href="rozcestnik.html" class="header__delivery">
+			<svg class="icon icon--delivery">
+	<use xlink:href="#icon--delivery"></use>
+</svg>
+			Přepnout na rozvoz
+		</a>
+		<div class="header__wrapper animate">
+			<a href="rozcestnik.html" class="header__logo"><svg class="icon icon--logo-header">
+	<use xlink:href="#icon--logo-header"></use>
+</svg>
+</a>
+			<div class="header__box">
+				<nav>
+					<ul>
+						<li><a href="#">Domů</a></li>
+						<li><a href="#">O nás</a></li>
+						<li><a href="#">Jídelní lístek</a></li>
+						<li><a href="#">Galerie</a></li>
+						<li><a href="#">Kontakt</a></li>
+					</ul>
+				</nav>
+				<a href="#" class="btn btn--transparent">Zarezervovat stůl</a>
+			</div>
+		</div>
+	</div>
+</header>
+
+
+	<div class="hero">
+	<svg class="icon icon--elipsa1 hero__elipsa hero__elipsa--right">
+	<use xlink:href="#icon--elipsa1"></use>
+</svg>
+	<svg class="icon icon--elipsa2 hero__elipsa hero__elipsa--bottom">
+	<use xlink:href="#icon--elipsa2"></use>
+</svg>
+	<svg class="icon icon--elipsa3 hero__elipsa hero__elipsa--left">
+	<use xlink:href="#icon--elipsa3"></use>
+</svg>
+	<svg class="icon icon--elipsa4 hero__elipsa hero__elipsa--top">
+	<use xlink:href="#icon--elipsa4"></use>
+</svg>
+	<div class="container">
+		<section class="splide js-show carousel" aria-label="Carousel">
+	        <div class="splide__track">
+	            <ul class="splide__list">
+	                <li class="splide__slide">
+						<div class="carousel__inner">
+							<div class="carousel__left animate animate--fall">
+								<p class="carousel__title title title--large">2+1<br>za korunu</p>
+								<p class="carousel__text">U nás dostaneš 2+1 pizzu za korunu a to i v restauraci i při doručení k tobě na adresu! :)</p>
+								<a href="#" class="btn btn--transparent btn--large">Objednat</a>
+							</div>
+							<div class="carousel__right animate animate--fall">
+								<div class="carousel__collage">
+									<img src="images/hero.png">
+								</div>
+							</div>
+						</div>
+	                </li>
+					<li class="splide__slide">
+						<div class="carousel__inner">
+							<div class="carousel__left">
+								<p class="carousel__title title title--large">Pizza zdarma!</p>
+								<p class="carousel__text">U nás dostaneš 2+1 pizzu za korunu a to i v restauraci i při doručení k tobě na adresu! :)</p>
+								<a href="#" class="btn btn--transparent btn--large">Objednat</a>
+							</div>
+							<div class="carousel__right">
+								<div class="carousel__collage">
+									<img src="images/hero.png">
+								</div>
+							</div>
+						</div>
+	                </li>
+					<li class="splide__slide">
+						<div class="carousel__inner">
+							<div class="carousel__left">
+								<p class="carousel__title title title--large">10+0<br>zadarmo</p>
+								<p class="carousel__text">U nás dostaneš 2+1 pizzu za korunu a to i v restauraci i při doručení k tobě na adresu! :)</p>
+								<a href="#" class="btn btn--transparent btn--large">Objednat</a>
+							</div>
+							<div class="carousel__right">
+								<div class="carousel__collage">
+									<img src="images/hero.png">
+								</div>
+							</div>
+						</div>
+	                </li>
+	            </ul>
+	        </div>
+	    </section>
+	</div>
+</div>
+
+
+	<section class="section section--shadow">
+		<div class="welcome-block">
+	<div class="container container--smaller">
+		<h2 class="title title--mirror animate animate--fall">Vítejte <b>u nás</b><span>Vítejte u nás</span></h2>
+		<div class="welcome-block__wrapper">
+			<div class="welcome-block__left">
+				<h3 class="title title--small welcome-block__title animate animate--fall">Rodinná Pizzerie <span>tělem i duší</span></h3>
+				<p class="welcome-block__text animate animate--fall">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Fusce consectetuer risus a nunc. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. In enim a arcu imperdiet malesuada. Nulla quis diam. Nullam at arcu a est sollicitudin euismod. Pellentesque arcu. Vivamus ac leo pretium faucibus. Fusce consectetuer risus a nunc. Aliquam id dolor. Etiam posuere lacus quis dolor. Ut tempus purus at lorem. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor.</p>
+				<p class="welcome-block__text animate animate--fall">Radomír Siwiec - <span>zakladatel restaurace</span></p>
+				<img src="images/signature.png" class="animate animate--fall">
+			</div>
+			<div class="welcome-block__right">
+				<div class="gallery animate">
+					<section class="splide js-main gallery__main">
+						<div class="splide__track">
+							<ul class="splide__list">
+								<li class="splide__slide">
+									<img src="images/slider.jpg">
+								</li>
+								<li class="splide__slide">
+									<img src="images/slider.jpg">
+								</li>
+								<li class="splide__slide">
+									<img src="images/slider.jpg">
+								</li>
+								<li class="splide__slide">
+									<img src="images/slider.jpg">
+								</li>
+							</ul>
+						</div>
+					</section>
+					<section class="splide js-thumbnails gallery__thumbnails">
+						<div class="splide__track">
+							<ul class="splide__list">
+								<li class="splide__slide">
+									<img src="images/thumbnail.jpg">
+								</li>
+								<li class="splide__slide">
+									<img src="images/thumbnail.jpg">
+								</li>
+								<li class="splide__slide">
+									<img src="images/thumbnail.jpg">
+								</li>
+								<li class="splide__slide">
+									<img src="images/thumbnail.jpg">
+								</li>
+							</ul>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div class="center animate animate--fall">
+			<a href="#" class="btn btn--lighten">Zobrazit celý náš příběh</a>
+		</div>
+	</div>
+</div>
+
+	</section>
+
+	<section class="section section--bg section--large">
+		<div class="menu">
+	<div class="container container--small">
+		<h2 class="title title--mirror menu__title animate animate--fall">Víkendové <b>MENU</b><span>Víkendové MENU</span></h2>
+		<p class="menu__subtitle animate animate--fall">Platnost tohoto menu je PÁTEK - NEDĚLE 26-28.8.2022</p>
+
+		<div class="menu__list">
+			<div class="menu__item animate animate--delay-1">
+				<h3 class="title title--small menu__item-title">POLÉVKA</h3>
+				<p class="menu__item-text">Česneková se sýrem, vejcem a krutóny</p>
+				<img src="images/menu1.jpg" class="menu__item-img">
+				<span class="menu__item-icon"><svg class="icon icon--info">
+	<use xlink:href="#icon--info"></use>
+</svg>
+</span>
+			</div>
+			<div class="menu__item animate animate--delay-2">
+				<h3 class="title title--small menu__item-title">HLAVNÍ JÍDLO</h3>
+				<p class="menu__item-text">Hovězí guláš s houskovým knedlíkem</p>
+				<img src="images/menu2.jpg" class="menu__item-img">
+				<span class="menu__item-icon"><svg class="icon icon--info">
+	<use xlink:href="#icon--info"></use>
+</svg>
+</span>
+			</div>
+			<div class="menu__item animate animate--delay-3">
+				<h3 class="title title--small menu__item-title">DEZERT</h3>
+				<p class="menu__item-text">Vanilkový puding s borůvkami</p>
+				<img src="images/menu3.jpg" class="menu__item-img">
+				<span class="menu__item-icon"><svg class="icon icon--info">
+	<use xlink:href="#icon--info"></use>
+</svg>
+</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</section>
+
+	<div class="info-block">
+	<div class="container">
+		<div class="info-block__wrapper">
+			<div class="info-block__box animate">
+				<svg class="icon icon--logo-header info-block__logo">
+	<use xlink:href="#icon--logo-header"></use>
+</svg>
+				<a href="tel:604333558" class="phone-block">
+					<div class="icon-frame">
+						<svg class="icon icon--phone">
+	<use xlink:href="#icon--phone"></use>
+</svg>
+					</div>
+					<p>604 333 558</p>
+				</a>
+			</div>
+			<div class="info-block__box animate">
+				<div class="socials">
+					<a href="#" class="icon-frame">
+						<svg class="icon icon--facebook">
+	<use xlink:href="#icon--facebook"></use>
+</svg>
+					</a>
+					<a href="#" class="icon-frame">
+						<svg class="icon icon--instagram">
+	<use xlink:href="#icon--instagram"></use>
+</svg>
+					</a>
+					<a href="#" class="icon-frame">
+						<svg class="icon icon--email">
+	<use xlink:href="#icon--email"></use>
+</svg>
+					</a>
+				</div>
+				<img src="images/21footer.png" class="info-block__img">
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	<footer class="footer">
+	<div class="container">
+		<div class="footer__wrapper">
+			<div class="footer__box">
+				<div class="footer__col animate animate--fall">
+					<h3 class="title title--small footer__title">Kde nás najdete?</h3>
+					<p>Pizzerie mr. pizza <br>Borovského 878 <br>734 01 Karviná</p>
+					<a href="#" class="footer__map">Zobrazit na mapě</a>
+				</div>
+				<div class="footer__col animate animate--fall">
+					<h3 class="title title--small footer__title">Další informace</h3>
+					<ul>
+						<li><a href="#">obchodní podmínky</a></li>
+						<li><a href="#">zpracování osobních údajů</a></li>
+						<li><a href="#">zásady používání souborů cookies</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="newsletter animate animate--fall">
+				<p class="newsletter__title">Přihlásit se k odběru novinek a slev</p>
+				<form action="">
+					<label for="">Váš e-mail</label>
+					<input name="" type="email" placeholder="Zde napište Váš e-mail">
+					<button type="submit">Odebírat</button>
+				</form>
+			</div>
+		</div>
+		<div class="footer__bottom animate">
+			<p>© mr.pizza 2022. Všechna práva vyhrazena.</p>
+			<p>Design, CMS by <a href="https://systemprorestauraci.cz/" target="_blank">systemprorestauraci.cz</a></p>
+		</div>
+	</div>
+</footer>
+
+
+	</div>
+
+	<script src="js/scripts.js"></script>
+</body>
+</html>
