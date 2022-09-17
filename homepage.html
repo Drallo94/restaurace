@@ -45,11 +45,11 @@
 			<svg class="icon icon--delivery">
 	<use xlink:href="#icon--delivery"></use>
 </svg>
-			Přepnout na rozvoz
+			<p><span>Přepnout na </span>rozvoz</p>
 		</a>
 		<div class="header__wrapper animate">
-			<a href="rozcestnik.html" class="header__logo"><svg class="icon icon--logo-header">
-	<use xlink:href="#icon--logo-header"></use>
+			<a href="rozcestnik.html" class="header__logo"><svg class="icon icon--logo">
+	<use xlink:href="#icon--logo"></use>
 </svg>
 </a>
 			<div class="header__box">
@@ -63,6 +63,13 @@
 					</ul>
 				</nav>
 				<a href="#" class="btn btn--transparent">Zarezervovat stůl</a>
+				<button type="button" class="togglenav__button js-nav">
+					<div class="togglenav__button-burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</button>
 			</div>
 		</div>
 	</div>
@@ -88,12 +95,12 @@
 	            <ul class="splide__list">
 	                <li class="splide__slide">
 						<div class="carousel__inner">
-							<div class="carousel__left animate animate--fall">
+							<div class="carousel__left animate">
 								<p class="carousel__title title title--large">2+1<br>za korunu</p>
 								<p class="carousel__text">U nás dostaneš 2+1 pizzu za korunu a to i v restauraci i při doručení k tobě na adresu! :)</p>
 								<a href="#" class="btn btn--transparent btn--large">Objednat</a>
 							</div>
-							<div class="carousel__right animate animate--fall">
+							<div class="carousel__right animate">
 								<div class="carousel__collage">
 									<img src="images/hero.png">
 								</div>
@@ -203,31 +210,25 @@
 
 		<div class="menu__list">
 			<div class="menu__item animate animate--delay-1">
-				<h3 class="title title--small menu__item-title">POLÉVKA</h3>
-				<p class="menu__item-text">Česneková se sýrem, vejcem a krutóny</p>
+				<div class="menu__wrapper">
+					<h3 class="title title--small menu__item-title">POLÉVKA</h3>
+					<p class="menu__item-text">Česneková se sýrem, vejcem a krutóny</p>
+				</div>
 				<img src="images/menu1.jpg" class="menu__item-img">
-				<span class="menu__item-icon"><svg class="icon icon--info">
-	<use xlink:href="#icon--info"></use>
-</svg>
-</span>
 			</div>
 			<div class="menu__item animate animate--delay-2">
-				<h3 class="title title--small menu__item-title">HLAVNÍ JÍDLO</h3>
-				<p class="menu__item-text">Hovězí guláš s houskovým knedlíkem</p>
+				<div class="menu__wrapper">
+					<h3 class="title title--small menu__item-title">HLAVNÍ JÍDLO</h3>
+					<p class="menu__item-text">Hovězí guláš s houskovým knedlíkem</p>
+				</div>
 				<img src="images/menu2.jpg" class="menu__item-img">
-				<span class="menu__item-icon"><svg class="icon icon--info">
-	<use xlink:href="#icon--info"></use>
-</svg>
-</span>
 			</div>
 			<div class="menu__item animate animate--delay-3">
-				<h3 class="title title--small menu__item-title">DEZERT</h3>
-				<p class="menu__item-text">Vanilkový puding s borůvkami</p>
+				<div class="menu__wrapper">
+					<h3 class="title title--small menu__item-title">DEZERT</h3>
+					<p class="menu__item-text">Vanilkový puding s borůvkami</p>
+				</div>
 				<img src="images/menu3.jpg" class="menu__item-img">
-				<span class="menu__item-icon"><svg class="icon icon--info">
-	<use xlink:href="#icon--info"></use>
-</svg>
-</span>
 			</div>
 		</div>
 	</div>
